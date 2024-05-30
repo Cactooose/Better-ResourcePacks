@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "better-resourcepacks",
+	"version": "${version}",
+	"name": "Better ResourcePacks",
+	"description": "This mod is aiming to make ResourcePacks Better!",
+	"authors": [
+		"KaktusVStakane"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/better-resourcepacks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.kvs.brp.BetterResourcePacks"
+		],
+		"client": [
+			"net.kvs.brp.BRPClient"
+		],
+		"fabric-datagen": [
+			"net.kvs.brp.BetterResourcePacksDataGenerator"
+		]
+	},
+	"mixins": [
+		"better-resourcepacks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
